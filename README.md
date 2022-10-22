@@ -2,7 +2,7 @@
 
 [![](https://jitpack.io/v/mobidroid92/EncryptedDataStore.svg)](https://jitpack.io/#mobidroid92/EncryptedDataStore)
 
-Add it in your root build.gradle at the end of repositories:
+Add Jitpack in your root build.gradle at the end of repositories:
 
 	allprojects {
 		repositories {
