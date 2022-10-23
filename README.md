@@ -8,7 +8,7 @@ Also you can customize encryption as your needs by implementing **EncryptionHelp
 # Compatibility
 Minimum Android SDK: 26
 
-# Usage
+# Setup
 Add to your root build.gradle:
 
 	allprojects {
@@ -23,7 +23,7 @@ Add the dependency:
 	    implementation 'com.github.mobidroid92:EncryptedDataStore:1.0.1'
 	}
 
-# How to use this library in your project?
+# Usage
 
 	val encryptedDataStore = EncryptedDataStore(BaseApplication.context!!)
 	val key = stringPreferencesKey("key_name")
