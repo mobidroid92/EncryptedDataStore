@@ -1,5 +1,3 @@
-import Versions.HILT_ANDROID
-
 plugins {
     id("com.android.library")
     kotlin ("android")
@@ -75,7 +73,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.mobidroid92"
             artifactId = "EncryptedDataStore"
-            version = "1.0"
+            version = "1.0.1"
 
             afterEvaluate {
                 from(components["release"])
