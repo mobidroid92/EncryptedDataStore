@@ -2,7 +2,14 @@
 
 [![](https://jitpack.io/v/mobidroid92/EncryptedDataStore.svg)](https://jitpack.io/#mobidroid92/EncryptedDataStore)
 
-Add Jitpack in your root build.gradle at the end of repositories:
+It is a library that let you use an encrypted DataStore securily and easily.
+Also you can customize encryption as your needs by implementing **EncryptionHelper** interface and pass it to **EncryptedDataStore**.
+
+# Compatibility
+Minimum Android SDK: 26
+
+# Usage
+Add to your root build.gradle:
 
 	allprojects {
 		repositories {
@@ -10,8 +17,19 @@ Add Jitpack in your root build.gradle at the end of repositories:
 			maven { url 'https://jitpack.io' }
 		}
 	}
-Step 2. Add the dependency
+Add the dependency:
 
 	dependencies {
-	        implementation 'com.github.mobidroid92:EncryptedDataStore:1.0.0'
+	    implementation 'com.github.mobidroid92:EncryptedDataStore:1.0.1'
 	}
+
+# How to use this library in your project?
+
+	val encryptedDataStore = EncryptedDataStore(BaseApplication.context!!)
+	val key = stringPreferencesKey("key_name")
+	viewModelScope.launch {
+	    encryptedDataStore.putString(key, "Hello World")
+	    val storedValue = encryptedDataStore.getString(key).first()
+	}
+
+- The instance of **EncryptedDataStore** has to be maintained as Singleton in your code.
