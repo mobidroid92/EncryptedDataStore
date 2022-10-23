@@ -9,12 +9,9 @@ import javax.crypto.Cipher
 import javax.crypto.KeyGenerator
 import javax.crypto.SecretKey
 import javax.crypto.spec.IvParameterSpec
-import javax.inject.Inject
-import javax.inject.Singleton
 import kotlin.concurrent.withLock
 
-@Singleton
-class EncryptionHelperImpl @Inject constructor(): EncryptionHelper {
+class EncryptionHelperImpl: EncryptionHelper {
 
     private val charset = Charsets.UTF_8
     private val cipher = Cipher.getInstance(TRANSFORMATION)

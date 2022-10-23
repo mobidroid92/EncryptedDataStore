@@ -3,7 +3,6 @@ import Versions.HILT_ANDROID
 plugins {
     id("com.android.library")
     kotlin ("android")
-    id ("dagger.hilt.android.plugin")
     kotlin ("kapt")
     id("maven-publish")
 }
@@ -47,16 +46,6 @@ dependencies {
      * https://developer.android.com/jetpack/androidx/releases/datastore
      */
     api ("androidx.datastore:datastore-preferences:1.0.0")
-
-    /**
-     * Hilt - Android
-     * https://github.com/google/dagger/releases
-     */
-    implementation ("com.google.dagger:hilt-android:$HILT_ANDROID")
-    kapt ("com.google.dagger:hilt-compiler:$HILT_ANDROID")
-//    kaptTest("com.google.dagger:hilt-android-compiler:$HILT_ANDROID")
-//    kaptAndroidTest("com.google.dagger:hilt-android-compiler:$HILT_ANDROID")
-//    androidTestImplementation("com.google.dagger:hilt-android-testing:$HILT_ANDROID")
 
     /**
      * Coroutine
