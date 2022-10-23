@@ -4,7 +4,6 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.SmallTest
-import com.bdour.encrypteddatastore.encryption.EncryptionHelperImpl
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.*
@@ -27,9 +26,8 @@ class EncryptedDataStoreTest {
 
         testScope = TestScope()
         encryptedDataStore = EncryptedDataStore(
-            EncryptionHelperImpl(),
-            ApplicationProvider.getApplicationContext(),
-            testScope
+            context = ApplicationProvider.getApplicationContext(),
+            scope = testScope
         )
     }
 
