@@ -20,7 +20,7 @@ Add to your root build.gradle:
 Add the dependency:
 
 	dependencies {
-	    implementation 'com.github.mobidroid92:EncryptedDataStore:1.0.1'
+	    implementation 'com.github.mobidroid92:EncryptedDataStore:1.0.3'
 	}
 
 # Usage
