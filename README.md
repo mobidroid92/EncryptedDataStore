@@ -35,7 +35,7 @@ Add the dependency:
 - The instance of **EncryptedDataStore** has to be maintained as Singleton in your code.
 
 # Let me know!
-I would be really happy if you sent me a links to your projects where you use my library. Just send an email to mobidroid92@gmail.com and do let me know if you have any questions or suggestion.
+I would be really happy if you sent me a links to your projects where you use my library. Just send an email to malbdour92@gmail.com and do let me know if you have any questions or suggestion.
 
 # About
 Find me on LinkedIn: https://www.linkedin.com/in/mobidroid92/
